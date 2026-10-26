@@ -1,0 +1,12 @@
+{
+  "production": {
+    "environment": "prod",
+    "command_patterns": ["ENV=prod", "--target prod"]
+  },
+  "sensitive_paths": [".env", ".env.*", "secrets/", "data/**"],
+  "fixture_policy": "synthetic-only",
+  "tracker": {
+    "adapter": "github",
+    "mirror_tasks": true
+  }
+}
